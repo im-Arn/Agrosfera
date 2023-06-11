@@ -30,13 +30,13 @@ const HeaderHamburgerMenu = ({ setIsOpenMenu, data }) => {
               />
             </Link>
             <Link href={"/"} className="ml-auto mr-[40px]">
-            <Button
-              variant="black"
-              className="w-[110px] h-[30px]
+              <Button
+                variant="black"
+                className="w-[110px] h-[30px]
               text-white text-[10px] leading-[10px] mr-[10px]"
-            >
-              Оставить заявку
-            </Button>
+              >
+                Оставить заявку
+              </Button>
             </Link>
             <motion.button
               whileHover={{ scale: 1.5 }}

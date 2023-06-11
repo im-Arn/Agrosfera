@@ -28,7 +28,7 @@ const Button = ({
   if (variant === "black") {
     return (
       <button
-        disabled={...disabled}
+        disabled={disabled}
         className={`flex items-center justify-center rounded-[3px]
         font-medium
         bg-[#303030] hover:bg-[#78B547]

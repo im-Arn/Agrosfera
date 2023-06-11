@@ -13,6 +13,6 @@ const AchievementItem = ({ name, sub1, sub2, key }) => {
       </div>
     </li>
   );
-}
+};
 
 export default AchievementItem;

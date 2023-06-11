@@ -13,6 +13,6 @@ const FooterBot = () => {
       </article>
     </section>
   );
-}
+};
 
 export default FooterBot;

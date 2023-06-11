@@ -3,9 +3,9 @@ import Footer from "../Footer";
 import MainPriceList from "./MainPriceList";
 import MainAchievements from "./MainAchievements";
 
-import Image from "next/image";
-import { BigGreen } from "../../assets/images/MainPage";
-import { Title2, Button } from "../ui";
+// import Image from "next/image";
+// import { BigGreen } from "../../assets/images/MainPage";
+// import { Title2, Button } from "../ui";
 
 const MainPage = () => {
 

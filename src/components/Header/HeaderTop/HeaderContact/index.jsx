@@ -1,5 +1,5 @@
 import { letter, phone } from "../../../../assets/images/Header";
-import TopItem from "../TopItem"
+import TopItem from "../TopItem";
 import Image from "next/image";
 
 const HeaderContact = () => {
@@ -25,6 +25,6 @@ const HeaderContact = () => {
       </ul>
     </article>
   );
-}
+};
 
 export default HeaderContact;

@@ -27,6 +27,6 @@ const HeaderTopNavigation = ({ nav, cartSum }) => {
       </button>
     </nav>
   );
-}
+};
 
 export default HeaderTopNavigation;

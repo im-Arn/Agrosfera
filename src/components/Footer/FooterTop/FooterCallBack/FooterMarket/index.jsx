@@ -19,7 +19,7 @@ const FooterMarket = () => {
       img: OZ,
       href: "/"
     },
-  ]
+  ];
 
   return (
     <article className="w-[311px]">
@@ -30,6 +30,6 @@ const FooterMarket = () => {
       </ul>
     </article>
   );
-}
+};
 
 export default FooterMarket;

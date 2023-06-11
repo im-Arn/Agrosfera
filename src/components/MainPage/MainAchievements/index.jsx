@@ -34,7 +34,7 @@ const MainAchievements = () => {
       sub1: "МЛН. ТОНН",
       sub2: "Транспортировка вагонами под управлением"
     },
-  ]
+  ];
 
   return (
     <section className="max-w-[1300px] px-[25px] xl:px-[0px] mt-[60px] lg:mt-[160px]">
@@ -45,6 +45,6 @@ const MainAchievements = () => {
       </ul>
     </section>
   );
-}
+};
 
 export default MainAchievements;

@@ -62,7 +62,7 @@ const FooterLinks = () => {
       img: SocLinkedin,
       href: "/"
     },
-  ]
+  ];
 
   return (
     <article className="sm:w-[70%] md:w-[45%] lg:w-[58%] flex flex-row flex-wrap justify-between text-center md:mt-0 gap-x-[75px] gap-y-[32px]">

@@ -9,5 +9,5 @@ const FooterCopyright = () => {
       <p className="text-[10px] leading-[10px] md:text-[12px] md:leading-[12px] md:w-[310px]">Сайт разработан </p>
     </div>
   );
-}
+};
 export default FooterCopyright;

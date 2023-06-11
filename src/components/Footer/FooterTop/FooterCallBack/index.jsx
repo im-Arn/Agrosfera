@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Button from "../../../ui/Button";
 import FooterMarket from "./FooterMarket";
 import FooterTitle from "../FooterTitle";

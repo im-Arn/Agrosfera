@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Title2, Button } from "../../ui";
 import React, { useState } from 'react';
 
@@ -55,6 +55,6 @@ const MainPriceList = () => {
       </div>
     </section>
   );
-}
+};
 
 export default MainPriceList;
