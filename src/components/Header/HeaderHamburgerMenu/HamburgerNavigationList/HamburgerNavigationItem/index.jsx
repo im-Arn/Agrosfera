@@ -13,7 +13,7 @@ const HamburgerNavigationItem = ({ name, route, img }) => {
       >
         <Image
           className="w-[33px] mr-[15px]"
-          src={...img}
+          src={img}
           alt={`иконка ${name}`}
         />
         {name}

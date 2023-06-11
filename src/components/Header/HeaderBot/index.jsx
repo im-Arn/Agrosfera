@@ -67,7 +67,7 @@ const HeaderBot = () => {
         src={logoHeader}
         alt="лого АгроСфера"
       />
-      <HeaderBotNavList data={...dataNavDesc} />
+      <HeaderBotNavList data={dataNavDesc} />
 
       <div className="flex">
         <Link href={"/"} className="mr-[28px] lg:mr-[0px]">
