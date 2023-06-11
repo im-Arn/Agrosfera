@@ -1,17 +1,17 @@
 /**
  * @param {string | ReactNode}  children - принимает текст или дочерний компонент.
  * @param {string}  className - принимает строку стилистики tailwind.
- * @param {"green" | "black"}  variant - принимает одно из 2 значений. 1 - цвет кнопки зелёный, 2 - чёрный
+ * @param {'green' | 'black'}  variant - принимает одно из 2 значений. 1 - цвет кнопки зелёный, 2 - чёрный
  */
 
 const Button = ({
   children,
   className,
   disabled,
-  variant = "green",
+  variant = 'green',
   ...props
 }) => {
-  if (variant === "green") {
+  if (variant === 'green') {
     return (
       <button
         disabled={disabled}
@@ -25,7 +25,7 @@ const Button = ({
     );
   }
 
-  if (variant === "black") {
+  if (variant === 'black') {
     return (
       <button
         disabled={disabled}

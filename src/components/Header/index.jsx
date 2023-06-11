@@ -1,11 +1,11 @@
 // 'use client'
-import HeaderTop from "./HeaderTop";
-import HeaderBot from "./HeaderBot";
+import HeaderTop from './HeaderTop';
+import HeaderBot from './HeaderBot';
 
 const Header = () => {
 
   return (
-    <header className="w-full">
+    <header className='w-full'>
       <HeaderTop />
       <HeaderBot />
     </header>
