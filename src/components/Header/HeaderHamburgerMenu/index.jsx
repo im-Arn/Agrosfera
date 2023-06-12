@@ -14,14 +14,14 @@ const HeaderHamburgerMenu = ({ setIsOpenMenu, data }) => {
       animate={{ opacity: 100 }}
       transition={{
         ease: 'linear',
-        duration: 0.25,
+        duration: 0.35,
       }}
     >
       <article className='z-1000'>
         <div
           className='fixed right-0 top-0 z-50 flex h-[100%] w-full max-w-[100%] flex-col items-center bg-white'
         >
-          <div className=' w-full h-[66px] px-[25px] flex items-center justify-between sm:justify-start'>
+          <div className='transition-all w-full h-[66px] px-[25px] flex items-center justify-between sm:justify-start'>
             <Link href={'/'}>
               <Image
                 className='w-[125px]'
