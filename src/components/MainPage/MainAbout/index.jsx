@@ -83,6 +83,6 @@ const MainAbout = () => {
       </article>
     </section >
   );
-}
+};
 
 export default MainAbout;

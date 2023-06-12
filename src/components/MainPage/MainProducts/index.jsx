@@ -2,7 +2,7 @@ import Accordion from './Accordion';
 import Link from 'next/link';
 import { Title2 } from '../../ui';
 import { BigGreen } from '../../../assets/images/MainPage';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 const MainProducts = () => {
   const products = [
@@ -66,6 +66,6 @@ const MainProducts = () => {
       </div>
     </section >
   );
-}
+};
 
 export default MainProducts;

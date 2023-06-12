@@ -1,9 +1,9 @@
-'use client'
+'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { arrowB, arrowG } from '../../../../assets/images/Accordion';
 
-const Accordion = ({ title, subtitle, href, img }, key) => {
+const Accordion = ({ title, subtitle, img }, key) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleAccordion = () => {

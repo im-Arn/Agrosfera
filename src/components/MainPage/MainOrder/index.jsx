@@ -1,4 +1,4 @@
-import { Title2 } from '../../ui';
+// import { Title2 } from '../../ui';
 const title = [
   'Условия поставки',
   'Образцы',
