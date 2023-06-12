@@ -2,7 +2,8 @@ import Header from '../Header/';
 import Footer from '../Footer';
 import MainPriceList from './MainPriceList';
 import MainAchievements from './MainAchievements';
-
+import MainProducts from './MainProducts';
+import MainAbout from './MainAbout';
 // import Image from 'next/image';
 // import { BigGreen } from '../../assets/images/MainPage';
 // import { Title2, Button } from '../ui';
@@ -19,6 +20,8 @@ const MainPage = () => {
         </section>
         <MainPriceList />
         <MainAchievements />
+        <MainProducts />
+        <MainAbout />
       </main>
       <Footer />
     </>
