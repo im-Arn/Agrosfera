@@ -28,7 +28,7 @@ const MainPage = () => {
         <MainAdvantages />
         <MainFeature>Предложение для оптовиков и перекупов </MainFeature>
         <MainOrder />
-        <section className='mt-[60px] w-full h-[502px] bg-[#F9F9F9] flex flex-col justify-center items-center  border-[2px] border-[##898989] rounded-xl'>
+        <section className='mt-[60px] lg:mt-[120px] w-full h-[502px] bg-[#F9F9F9] flex flex-col justify-center items-center  border-[2px] border-[##898989] rounded-xl'>
           <p className='text-[36px] leading-[43px] text-bold text-[#C8C8C8]'>Контакты</p>
         </section>
       </main>
