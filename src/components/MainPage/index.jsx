@@ -6,6 +6,7 @@ import MainProducts from './MainProducts';
 import MainAbout from './MainAbout';
 import MainOrder from './MainOrder';
 import MainFeature from './MainFeature';
+import MainAdvantages from './MainAdvantages';
 // import Image from 'next/image';
 // import { BigGreen } from '../../assets/images/MainPage';
 // import { Title2, Button } from '../ui';
@@ -24,6 +25,7 @@ const MainPage = () => {
         <MainAchievements />
         <MainProducts />
         <MainAbout />
+        <MainAdvantages />
         <MainFeature>Предложение для оптовиков и перекупов </MainFeature>
         <MainOrder />
         <section className='mt-[60px] w-full h-[502px] bg-[#F9F9F9] flex flex-col justify-center items-center  border-[2px] border-[##898989] rounded-xl'>
