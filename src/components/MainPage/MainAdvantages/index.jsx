@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { Title2 } from '../../ui';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 const MainAdvantages = () => {
   const [isOpen, setIsOpen] = useState(1);
