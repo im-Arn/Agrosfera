@@ -11,7 +11,7 @@ const HeaderTopNavigation = ({ nav, cartSum }) => {
         ))}
       </ul>
       <button
-        className='h-[21px] w-[21px] md:w-[32px] md:h-[25px] mr-[9px] items-center justify-center bg-transparent
+        className='hidden h-[21px] w-[21px] md:w-[32px] md:h-[25px] mr-[9px] items-center justify-center bg-transparent
           relative'
       >
         <div className='h-[18px] w-[18px] md:h-[24px] md:w-[24px] rounded-3xl bg-[#7BB949] flex items-center justify-center 

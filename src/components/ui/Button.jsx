@@ -16,7 +16,7 @@ const Button = ({
       <button
         disabled={disabled}
         className={`flex items-center justify-center rounded-[3px]
-        font-medium
+        font-medium transition duration-200 ease-in-out
         bg-[#78B547] hover:bg-[#8FD457]
          ${className}`}
       >
@@ -30,7 +30,7 @@ const Button = ({
       <button
         disabled={disabled}
         className={`flex items-center justify-center rounded-[3px]
-        font-medium
+        font-medium transition duration-200 ease-in-out
         bg-[#303030] hover:bg-[#78B547]
         ${className}`}
         {...props}

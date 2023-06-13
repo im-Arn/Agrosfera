@@ -11,7 +11,7 @@ const HeaderBotNavList = ({ data }) => {
             <Link
               className='w-full h-full flex items-center
         text-left font-normal md:text-[14px] md:leading-[16px] lg:text-[16px] lg:leading-[20px] whitespace-nowrap
-        hover:font-bold'
+        hover:font-bold transition-all duration-100 ease-linear'
               href={route}
             >
               {img && <Image

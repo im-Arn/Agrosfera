@@ -22,9 +22,9 @@ const FooterMarket = () => {
   ];
 
   return (
-    <article className='w-[311px]'>
+    <article className='max-w-[311px]'>
       <FooterTitle>Мы на маркетплейсах:</FooterTitle>
-      <ul className='flex gap-1 mt-[10px]'>
+      <ul className='flex flex-wrap gap-1 mt-[10px]'>
         {markets.map(({ name, img, href }, index) =>
           (<FooterMarketButton name={name} img={img} href={href} key={index} />))}
       </ul>

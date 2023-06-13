@@ -63,14 +63,24 @@ const HeaderBot = () => {
   return (
     <section className='mx-auto max-w-[1300px] h-[66px] md:h-[110px] px-[25px] xl:px-[0px] flex items-center justify-between'>
       <Image
-        className='w-[125px] md:w-[157px] xl:w-[210px]'
+        className='w-[40%] max-w-[125px] md:w-[157px] xl:w-[210px]'
         src={logoHeader}
         alt='лого АгроСфера'
       />
       <HeaderBotNavList data={dataNavDesc} />
 
-      <div className='flex'>
-        <Link href={'/'} className='mr-[28px] lg:mr-[0px]'>
+      <div className='w-[56%] max-w-[174px] md:max-w-[240px] flex'>
+        {/* <Link href={'/'} className='mr-[28px] lg:mr-[0px]'>
+          <Button
+            variant='black'
+            className='w-[124px] md:w-[180px] xl:w-[239px] h-[30px] md:h-[44px]
+        text-white text-[10px] leading-[10px] md:text-[14px] md:leading-[14px] '
+          >
+            Оставить заявку
+          </Button>
+        </Link> */}
+
+        <Link href={'/'} className='mr-[8%] lg:mr-[0px]'>
           <Button
             variant='black'
             className='w-[124px] md:w-[180px] xl:w-[239px] h-[30px] md:h-[44px]
