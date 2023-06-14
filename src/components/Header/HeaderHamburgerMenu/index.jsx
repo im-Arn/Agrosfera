@@ -3,10 +3,17 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import Button from '../../ui/Button';
+import React, { useEffect } from 'react';
 import HamburgerNavigationList from './HamburgerNavigationList';
 import { closeMenu, logoHeader } from '../../../assets/images/Header';
 
 const HeaderHamburgerMenu = ({ setIsOpenMenu, data }) => {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, []);
 
   return (
     <motion.nav
@@ -29,7 +36,7 @@ const HeaderHamburgerMenu = ({ setIsOpenMenu, data }) => {
                 alt='лого АгроСфера'
               />
             </Link>
-            <Link href={'/'} className='ml-auto mr-[40px]'>
+            <Link href={'/'}>
               <Button
                 variant='black'
                 className='w-[110px] h-[30px]
