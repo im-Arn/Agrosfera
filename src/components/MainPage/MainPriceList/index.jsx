@@ -1,6 +1,7 @@
 'use client';
-import { Title2, Button } from '../../ui';
+import { Button, Title2 } from '@/components/ui';
 import React, { useState } from 'react';
+import { ContentZone } from '@/components/ui';
 
 const MainPriceList = () => {
 
@@ -64,6 +65,7 @@ const MainPriceList = () => {
     e.preventDefault();
 
     if (isFormValid()) {
+      // const postData = formValues; //инпуты
       setFormValues((prevValues) => ({
         ...prevValues,
         person: '',
@@ -71,7 +73,6 @@ const MainPriceList = () => {
         phone: '',
       }));
     } else {
-      console.log('Форма содержит ошибки');
       setFormErrors((prevErrors) => ({
         ...prevErrors,
         person: true,
@@ -84,84 +85,85 @@ const MainPriceList = () => {
   };
 
   return (
-    <section className={`max-w-[1300px] h-[779px] md:h-[700px] md:rounded-md flex justify-center relative 
-    bg-cover px-[25px] xl:px-[0px] mt-[35px] bg-[url('../assets/images/MainPage/bigGreen.png')] bg-center`}>
-      <div className='w-[87.18%] max-w-[340px] md:max-w-[450px]  sm:w-[450px] sm:h-[639px] rounded-xl bg-[#FFFFFF] 
-  absolute top-[126px] md:top-[30px] md:right-40 px-[15px] pt-[28px] pb-[30px] md:px-[39px]'>
-        <Title2>Получить прайс-лист</Title2>
-        <form className='mt-[31px] flex flex-col items-center gap-[15px]' onSubmit={handleSubmit}>
-          <label className='w-full flex flex-col gap-[10px] text-[16px] leading-[16px] font-medium' htmlFor='person'><p>Название компании</p>
-            <input
-              type='text'
-              id='person'
-              name='person'
-              placeholder='ИЛИ ВАШЕ ИМЯ'
-              value={formValues.person}
-              maxLength='12'
-              onChange={handleChange}
-              className={`w-full max-w-[310px] md:max-w-full h-[50px] px-[25px] rounded-md border-[1px] bg-transparent 
+    <section className={`max-w-[1300px] mx-auto h-[779px] md:h-[700px] md:rounded-md flex justify-center relative 
+    bg-cover mt-[35px] bg-[url('../assets/images/MainPage/bigGreen.png')] bg-center`}>
+      <ContentZone>
+        <div className='w-[87.3%] max-w-[340px] md:max-w-[450px] sm:w-[450px] sm:h-[639px] rounded-xl bg-[#FFFFFF] 
+  absolute top-[126px] md:top-[30px] md:right-[40px] px-[15px] pt-[28px] pb-[30px] md:px-[39px]'>
+          <Title2>Получить прайс-лист</Title2>
+          <form className='mt-[31px] flex flex-col items-center gap-[15px]' onSubmit={handleSubmit}>
+            <label className='w-full flex flex-col gap-[10px] text-[16px] leading-[16px] font-medium' htmlFor='person'><p>Название компании</p>
+              <input
+                type='text'
+                id='person'
+                name='person'
+                placeholder='ИЛИ ВАШЕ ИМЯ'
+                value={formValues.person}
+                maxLength='12'
+                onChange={handleChange}
+                className={`w-full max-w-[310px] md:max-w-full h-[50px] px-[25px] rounded-md border-[1px] bg-transparent 
             font-normal text-[14px] leading-[14px] focus:outline-none focus:border-black
            ${formErrors.person ? 'border-[#DD4433] text-[#DD4433] focus:border-[#DD4433]' : 'border-[#C4C4C4]'}  
            placeholder:text-[#898989] placeholder:text-[14px] placeholder:leading-[14px]
            `}
-            />
-          </label>
-          <label className='w-full flex flex-col gap-[10px] text-[16px] leading-[16px] font-medium' htmlFor='mail'><p>Ваш email</p>
-            <input
-              type='email'
-              id='mail'
-              name='mail'
-              placeholder='mail@mail.mail'
-              value={formValues.mail}
-              maxLength='50'
-              onChange={handleChange}
-              className={`w-full max-w-[310px] md:max-w-full h-[50px] px-[25px] rounded-md border-[1px] bg-transparent 
+              />
+            </label>
+            <label className='w-full flex flex-col gap-[10px] text-[16px] leading-[16px] font-medium' htmlFor='mail'><p>Ваш email</p>
+              <input
+                type='email'
+                id='mail'
+                name='mail'
+                placeholder='email@mail.ru'
+                value={formValues.mail}
+                maxLength='50'
+                onChange={handleChange}
+                className={`w-full max-w-[310px] md:max-w-full h-[50px] px-[25px] rounded-md border-[1px] bg-transparent 
             font-normal text-[14px] leading-[14px] focus:outline-none focus:border-black
            ${formErrors.mail ? 'border-[#DD4433] text-[#DD4433] focus:border-[#DD4433]' : 'border-[#C4C4C4]'}  
            placeholder:text-[#898989] placeholder:text-[14px] placeholder:leading-[14px]
            `}
-            />
-          </label>
-          <label className='w-full flex flex-col gap-[10px] text-[16px] leading-[16px] font-medium' htmlFor='phone'><p>Ваш телефон</p>
-            <input
-              type='tel'
-              id='phone'
-              name='phone'
-              placeholder='+7 (492)'
-              value={formValues.phone}
-              maxLength='12'
-              minLength='10'
-              onChange={handleChange}
-              className={`w-full max-w-[310px] md:max-w-full h-[50px] px-[25px] rounded-md border-[1px] bg-transparent 
+              />
+            </label>
+            <label className='w-full flex flex-col gap-[10px] text-[16px] leading-[16px] font-medium' htmlFor='phone'><p>Ваш телефон</p>
+              <input
+                type='tel'
+                id='phone'
+                name='phone'
+                placeholder='+7 (492)'
+                value={formValues.phone}
+                maxLength='12'
+                minLength='10'
+                onChange={handleChange}
+                className={`w-full max-w-[310px] md:max-w-full h-[50px] px-[25px] rounded-md border-[1px] bg-transparent 
             font-normal text-[14px] leading-[14px] focus:outline-none focus:border-black
            ${formErrors.phone ? 'border-[#DD4433] text-[#DD4433] focus:border-[#DD4433]' : 'border-[#C4C4C4]'}  
            placeholder:text-[#898989] placeholder:text-[14px] placeholder:leading-[14px]
            `}
-            />
-          </label>
-          <label className='w-full flex flex-col gap-[10px] text-[16px] leading-[16px] font-medium' htmlFor='message'><p>Ваш телефон</p>
-            <textarea
-              id='message'
-              name='message'
-              placeholder=''
-              value={formValues.message}
-              onChange={handleChange}
-              className={`w-full max-w-[310px] md:max-w-full h-[123px] resize-none px-[25px] py-[20px] rounded-md border-[1px] bg-transparent 
+              />
+            </label>
+            <label className='w-full flex flex-col gap-[10px] text-[16px] leading-[16px] font-medium' htmlFor='message'><p>Комментарий</p>
+              <textarea
+                id='message'
+                name='message'
+                placeholder=''
+                value={formValues.message}
+                onChange={handleChange}
+                className={`w-full max-w-[310px] md:max-w-full h-[123px] resize-none px-[25px] py-[20px] rounded-md border-[1px] bg-transparent 
             font-normal text-[14px] leading-[14px] focus:outline-none focus:border-black  
            placeholder:text-[#898989] placeholder:text-[14px] placeholder:leading-[14px]
            `}
-            />
-          </label>
-          <Button
-            // disabled={true}
-            type='submit'
-            variant='green'
-            className='w-full max-w-[280px] h-[46px] mt-[15px] text-white text-[13px] leading-[13px]'
-          >
-            Получить прайс
-          </Button>
-        </form>
-      </div>
+              />
+            </label>
+            <Button
+              type='submit'
+              variant='green'
+              className='w-full max-w-[280px] h-[46px] mt-[15px] text-white text-[13px] leading-[13px]'
+            >
+              Получить прайс
+            </Button>
+          </form>
+        </div>
+      </ContentZone>
     </section>
   );
 };

@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className='w-full'>
       <FooterTop />
       <FooterBot />
-    </footer>
+    </footer >
   );
 };
 

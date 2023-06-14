@@ -1,9 +1,37 @@
 'use client';
 import React, { useState } from 'react';
 import { Title2 } from '@/components/ui';
-// import Image from 'next/image';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import Image from 'next/image';
+import AdvantagesItem from './AdvantagesItem';
+import { BigGreen, ppl } from '@/assets/images/MainPage';
 
 const MainAdvantages = () => {
+  const titles1 = [
+    {
+      title: 'Команда профессионалов',
+      subtitle: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using'
+    },
+    {
+      title: 'Более 10 лет на рынке',
+      subtitle: 'It is a long established fact that a reader will be distracted by the readable content'
+    }
+  ];
+
+  const titles2 = [
+    {
+      title: 'Команда профессионалов',
+      subtitle: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using'
+    },
+    {
+      title: 'Более 10 лет на рынке',
+      subtitle: 'It is a long established fact that a reader will be distracted by the readable content'
+    }
+  ];
+
+  const slide1 = [BigGreen, ppl, BigGreen, ppl];
+  const slide2 = [ppl, BigGreen, ppl, BigGreen, ppl];
+
   const [isOpen, setIsOpen] = useState(1);
 
   const toggleTab1 = () => {
@@ -15,7 +43,7 @@ const MainAdvantages = () => {
   };
 
   return (
-    <section className='w-full mt-[28px] px-[25px] xl:px-[0px] pb-[60px] lg:pb-[30px] flex flex-col border-b-[1px] border-[#С4С4С4] bg-[#ffffff]'>
+    <section className='w-full mt-[28px] lg:mt-[152px] pb-[60px] lg:pb-[30px] flex flex-col border-b-[1px] border-[#С4С4С4] bg-[#ffffff]'>
       <Title2>Ключевые показатели</Title2>
       <nav className='w-full pt-[33px] lg:pt-[60px] flex flex-row'>
         <button className={`w-full h-[32px] lg:h-[34px] ${isOpen === 1 ? 'border-b-[2px] border-[#66B463]' : ''}
@@ -35,47 +63,65 @@ const MainAdvantages = () => {
         {isOpen === 1 &&
           <article className='w-full flex flex-col lg:flex-row lg:justify-between gap-[30px] md:gap-[20px]'>
             <ul className='w-full max-w-[444px] flex flex-col lg:self-center gap-[15px] lg:gap-[71px]'>
-              <li className='w-full flex flex-col gap-[15px]'>
-                <h4 className='text-[18px] leading-[22px] md:text-[24px] md:leading-[29px] text-[#000000] font-bold'>Команда профессионалов</h4>
-                <p className='text-[14px] leading-[18px] text-[#000000] font-normal text-[#2E2E2E]'>
-                  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
-                </p>
-              </li>
-              <li className='w-full flex flex-col gap-[15px]'>
-                <h4 className='  text-[18px] leading-[22px] md:text-[24px] md:leading-[29px] text-[#000000] font-bold'>Более 10 лет на рынке</h4>
-                <p className='text-[14px] leading-[18px] text-[#000000] font-normal text-[#2E2E2E]'>
-                  It is a long established fact that a reader will be distracted by the readable content
-                </p>
-              </li>
+              {titles1.map(({ title, subtitle }, index) => (
+                <AdvantagesItem title={title} subtitle={subtitle} key={index} />))}
             </ul>
-            <div className='w-full max-w-[590px] h-[550px] bg-[#C4C4C4] rounded-md pb-[13px] self-center lg:self-start text-center'>slide
+            <div className='w-full max-w-[590px] h-[550px] bg-[#C4C4C4] rounded-md pb-[13px] self-center lg:self-start text-center'>
+              <Swiper
+                grabCursor
+                slidesPerView={1}
+                spaceBetween={0}
+                slidesOffsetBefore={0}
+                slidesOffsetAfter={0}
+                initialSlide={0}
+              >
+                {slide1.map((slide, index) => (
+                  <SwiperSlide className='w-full max-w-[590px] h-[550px]' key={index}>
+                    <div className='w-full max-w-[590px] h-[550px]'>
+                      <Image
+                        src={slide}
+                        alt='поразительные слайды'
+                        className='w-full h-full rounded-md'
+                      />
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </div>
           </article>
         }
         {isOpen === 2 &&
           <article className='w-full flex flex-col lg:flex-row lg:justify-between gap-[30px] md:gap-[20px]'>
             <ul className='w-full max-w-[444px] flex flex-col lg:self-center gap-[15px] lg:gap-[71px]'>
-              <li className='w-full flex flex-col gap-[15px]'>
-                <h4 className='text-[18px] leading-[22px] md:text-[24px] md:leading-[29px] text-[#000000] font-bold'>Команда профессионалов</h4>
-                <p className='text-[14px] leading-[18px] text-[#000000] font-normal text-[#2E2E2E]'>
-                  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
-                </p>
-              </li>
-              <li className='w-full flex flex-col gap-[15px]'>
-                <h4 className='text-[18px] leading-[22px] md:text-[24px] md:leading-[29px] text-[#000000] font-bold'>Более 10 лет на рынке</h4>
-                <p className='text-[14px] leading-[18px] text-[#000000] font-normal text-[#2E2E2E]'>
-                  It is a long established fact that a reader will be distracted by the readable content
-                </p>
-              </li>
+              {titles2.map(({ title, subtitle }, index) => (
+                <AdvantagesItem title={title} subtitle={subtitle} key={index} />))}
             </ul>
-            <div className='w-full max-w-[590px] h-[550px] bg-[#66B463] rounded-md pb-[13px] self-center lg:self-start text-center'>slide
+            <div className='w-full max-w-[590px] h-[550px] bg-[#66B463] rounded-md pb-[13px] self-center lg:self-start text-center'>
+              <Swiper
+                grabCursor
+                slidesPerView={1}
+                spaceBetween={0}
+                slidesOffsetBefore={0}
+                slidesOffsetAfter={0}
+                initialSlide={0}
+              >
+                {slide2.map((slide, index) => (
+                  <SwiperSlide className='w-full max-w-[590px] h-[550px]' key={index}>
+                    <div className='w-full max-w-[590px] h-[550px]'>
+                      <Image
+                        src={slide}
+                        alt='поразительные слайды'
+                        className='w-full h-full rounded-md'
+                      />
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </div>
-          </article>
+          </article >
         }
-      </div>
-    </section>
+      </div >
+    </section >
   );
 };
 

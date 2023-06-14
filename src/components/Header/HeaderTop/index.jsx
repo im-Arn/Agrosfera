@@ -1,5 +1,6 @@
 import HeaderContact from './HeaderContact';
 import HeaderTopNavigation from './HeaderTopNavigation';
+import { ContentZone } from '@/components/ui';
 
 const HeaderTop = () => {
 
@@ -22,11 +23,14 @@ const HeaderTop = () => {
 
   return (
     <section className='bg-[#EEEEEE]'>
-      <div className='max-w-[1300px] h-[39px] md:h-[45px] mx-auto px-[25px] xl:px-[0px] bg-[#EEEEEE] flex items-center justify-between text-[#5D5E61]'>
-        <HeaderContact />
-        <HeaderTopNavigation nav={nav} cartSum={cartSum} />
-      </div>
+      <ContentZone>
+        <div className='max-w-[1300px] h-[39px] md:h-[45px] mx-auto bg-[#EEEEEE] flex items-center justify-between text-[#5D5E61]'>
+          <HeaderContact />
+          <HeaderTopNavigation nav={nav} cartSum={cartSum} />
+        </div>
+      </ContentZone>
     </section>
+
   );
 };
 

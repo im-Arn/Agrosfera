@@ -1,4 +1,4 @@
-import { Title2 } from '../../ui';
+import { Title2 } from '@/components/ui';
 import AchievementItem from './AchievementItem';
 
 const MainAchievements = () => {
@@ -37,7 +37,7 @@ const MainAchievements = () => {
   ];
 
   return (
-    <section className='max-w-[1300px] px-[25px] xl:px-[0px] mt-[57px] lg:mt-[160px]'>
+    <section className='max-w-[1300px] mt-[57px] lg:mt-[172px]'>
       <Title2>О нас в цифрах</Title2>
       <ul className='flex grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[1px] gap-x-[1px] md:mt-[30px] bg-[#C4C4C4]'>
         {achievements.map(({ name, sub1, sub2 }, index) =>

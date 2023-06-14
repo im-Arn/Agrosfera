@@ -65,7 +65,7 @@ const FooterLinks = () => {
   ];
 
   return (
-    <article className='sm:w-[70%] md:w-[45%] lg:w-[58%] flex flex-row flex-wrap justify-between text-center md:mt-0 gap-x-[75px] gap-y-[32px]'>
+    <article className='sm:w-[70%] md:w-[45%] lg:w-[58%] flex flex-row flex-wrap justify-between text-center md:mt-0 gap-x-[60px] sl:gap-x-[75px] gap-y-[32px]'>
       <FooterList links={list1} title='О компании' />
       <FooterList links={list2} title='Продукция' />
       <FooterList links={list3} title='Следи за нами' variant='social'/>

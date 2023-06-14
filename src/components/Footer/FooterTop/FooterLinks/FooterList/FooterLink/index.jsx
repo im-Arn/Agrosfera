@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-const FooterLink = ({ name, img, href, key }) => {
+const FooterLink = ({ name, img, href}, key ) => {
   if (img) {
     return (
       <>
