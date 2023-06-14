@@ -17,13 +17,15 @@ const FooterCallBack = () => {
     } else {
       setError(false);
     }
-
   };
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setPhone('');
-    setError(false);
+    if (!error()) {
+      // const postData = phone; //инпут
+      setPhone('');
+    }
   };
 
   return (
