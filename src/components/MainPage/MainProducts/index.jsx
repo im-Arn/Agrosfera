@@ -71,7 +71,7 @@ const MainProducts = () => {
             </Link>
           </div>
         </div>
-        <div className='w-[48%]'>
+        <div className='hidden lg:block w-[48%]'>
           <Image
             className='hidden lg:block w-full aspect-[316/275]'
             src={activeIndex !== null ? products[activeIndex].img : BigGreen}
