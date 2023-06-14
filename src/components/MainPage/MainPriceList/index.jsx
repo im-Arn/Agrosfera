@@ -22,11 +22,11 @@ const MainPriceList = () => {
     setError(false);
   };
 
-
   return (
-    <section className='max-w-[1300px] h-[779px] md:h-[700px] rounded-md flex justify-center relative bg-teal-300 bg-cover px-[25px] xl:px-[0px] mt-[35px]'>
-      <div className='w-[84%] max-w-[340px] h-[622px] sm:w-[450px] sm:h-[639px] rounded-xl bg-[#FFFFFF] 
-  absolute top-[126px] md:top-[30px] md:right-40 px-[13px] py-[30px] md:px-[39px]'>
+    <section className={`max-w-[1300px] h-[779px] md:h-[700px] rounded-md flex justify-center relative 
+    bg-cover px-[25px] xl:px-[0px] mt-[35px] bg-[url('../assets/images/MainPage/bigGreen.png')]`}>
+      <div className='w-[84%] max-w-[340px] md:max-w-[450px] h-[622px] sm:w-[450px] sm:h-[639px] rounded-xl bg-[#FFFFFF] 
+  absolute top-[126px] md:top-[30px] md:right-40 px-[15px] py-[30px] md:px-[39px]'>
         <Title2>Получить прайс-лист</Title2>
         <form className='mt-[30px] flex flex-col items-center gap-[15px]' onSubmit={handleSubmit}>
           <label className='w-full flex flex-col gap-[10px] text-[16px] leading-[16px] font-medium'><p>Ваш телефон</p>
@@ -36,7 +36,7 @@ const MainPriceList = () => {
               value={phone}
               maxLength='12'
               onChange={handleChange}
-              className={`w-full max-w-[310px] md:w-[360px] h-[50px] px-[25px] rounded-md border-[1px] bg-transparent 
+              className={`w-full max-w-[310px] md:max-w-full h-[50px] px-[25px] rounded-md border-[1px] bg-transparent 
             font-normal text-[14px] leading-[14px] focus:outline-none focus:border-black
            ${error ? 'border-[#DD4433] text-[#DD4433] focus:border-[#DD4433]' : 'border-[#C4C4C4]'}  
            placeholder:text-[#898989] placeholder:text-[14px] placeholder:leading-[14px]
