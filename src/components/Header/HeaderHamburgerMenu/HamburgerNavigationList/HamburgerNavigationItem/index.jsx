@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { hArrow } from '../../../../../assets/images/Header';
+import { hArrow } from '@/assets/images/Header';
 
 const HamburgerNavigationItem = ({ name, route, img }) => {
   return (

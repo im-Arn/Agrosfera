@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { Title2 } from '../../ui';
+import { Title2 } from '@/components/ui';
 // import Image from 'next/image';
 
 const MainAdvantages = () => {

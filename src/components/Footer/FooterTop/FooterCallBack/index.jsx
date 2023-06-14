@@ -1,5 +1,5 @@
 'use client';
-import Button from '../../../ui/Button';
+import { Button } from '@/components/ui';
 import FooterMarket from './FooterMarket';
 import FooterTitle from '../FooterTitle';
 import React, { useState } from 'react';
@@ -7,16 +7,6 @@ import React, { useState } from 'react';
 const FooterCallBack = () => {
   const [error, setError] = useState(false);
   const [phone, setPhone] = useState('');
-
-  // const formatPhoneNumber = (value) => {
-  // ерунда нерабочая
-  //   const formattedValue = value      
-  //   .replace(/(\d{1})(?=\d)/, '$1 ')
-  //   .replace(/(\d{1})(\d{3})(?=\d)/g, '$1 $2 ');
-
-  //   return formattedValue;
-
-  // };
 
   const handleChange = (e) => {
     const inputValue = e.target.value;

@@ -1,6 +1,6 @@
 
 
-const AchievementItem = ({ name, sub1, sub2, key }) => {
+const AchievementItem = ({ name, sub1, sub2}, key ) => {
 
   return (
     <li key={key} className='w-full h-[150px] md:h-[200px] px-[20px] flex flex-col items-start sm:items-center justify-center bg-[#ffffff]'>

@@ -1,7 +1,6 @@
 'use client';
-import React, { useState } from 'react';
 import Image from 'next/image';
-import { arrowB, arrowG } from '../../../../assets/images/Accordion';
+import { arrowB, arrowG } from '@/assets/images/Accordion';
 
 const Accordion = ({ title, subtitle, img , isOpen, onToggle}, key) => {
   return (

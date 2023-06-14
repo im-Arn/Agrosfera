@@ -1,4 +1,4 @@
-import { letter, phone } from '../../../../assets/images/Header';
+import { letter, phone } from '@/assets/images/Header';
 import TopItem from '../TopItem';
 import Image from 'next/image';
 

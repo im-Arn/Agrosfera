@@ -1,7 +1,7 @@
-"use client"
-import Image from 'next/image';
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+'use client';
+// import Image from 'next/image';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 const MainReviews = () => {
 
@@ -54,8 +54,6 @@ const MainReviews = () => {
               display: 'block',
               maxHeight: '14px',
               whiteSpace: 'nowrap',
-              padding: '0 16px',
-              boxSizing: 'border-box',
             }}
           >
             Храм Воскресения Христова Спас на Крови на карте Санкт-Петербурга — Яндекс Карты
@@ -67,35 +65,7 @@ const MainReviews = () => {
           spaceBetween={10}
           slidesOffsetBefore={16}
           slidesOffsetAfter={16}
-          initialSlide={1}
-          // breakpoints={{
-          //   320: {
-          //     slidesPerView: 1,
-          //   },
-          //   390: {
-          //     slidesPerView: 1,
-          //   },
-          //   520: {
-          //     slidesPerView: 2.2,
-          //   },
-          //   620: {
-          //     slidesPerView: 2.2,
-          //   },
-          //   700: {
-          //     slidesPerView: 2.8,
-          //   },
-          //   767: {
-          //     slidesPerView: 3.2,
-          //   },
-          //   1023: {
-          //     slidesPerView: 3.8,
-          //   },
-          //   1279: {
-          //     slidesPerView: 4,
-          //     slidesOffsetBefore: 0,
-          //     slidesOffsetAfter: 0,
-          //     grabCursor: false,
-          //   },}}   
+          initialSlide={1}   
         >
           {reviews.map(({title, subtitle}, index) => (
             <SwiperSlide key={index} className="">
