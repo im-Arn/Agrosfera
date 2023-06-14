@@ -1,5 +1,5 @@
 import FooterList from './FooterList';
-import { SocInsta, SocFB, SocYoutube, SocLinkedin } from '../../../../assets/images/Footer';
+import { SocInsta, SocFB, SocYoutube, SocLinkedin } from '@/assets/images/Footer';
 
 const FooterLinks = () => {
 

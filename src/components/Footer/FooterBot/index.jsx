@@ -1,5 +1,4 @@
 
-
 const FooterBot = () => {
   return (
     <section className="h-fit lg:h-[111px] bg-[#141414]">

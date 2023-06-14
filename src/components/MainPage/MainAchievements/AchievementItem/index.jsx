@@ -1,9 +1,9 @@
 
 
-const AchievementItem = ({ name, sub1, sub2, key }) => {
+const AchievementItem = ({ name, sub1, sub2}, key ) => {
 
   return (
-    <li key={key} className='w-full h-[150px] md:h-[200px] px-[20px] flex flex-col items-center justify-center bg-[#ffffff]'>
+    <li key={key} className='w-full h-[150px] md:h-[200px] px-[20px] flex flex-col items-start sm:items-center justify-center bg-[#ffffff]'>
       <div className='w-[197px] h-[69px] flex flex-col'>
         <p className='whitespace-nowrap text-[45px] leading-[45px] font-normal'>
           {name}

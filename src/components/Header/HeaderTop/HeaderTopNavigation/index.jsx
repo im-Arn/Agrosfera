@@ -1,4 +1,4 @@
-import { cart } from '../../../../assets/images/Header';
+import { cart } from '@/assets/images/Header';
 import Image from 'next/image';
 import TopItem from '../TopItem';
 

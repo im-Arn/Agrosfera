@@ -1,5 +1,5 @@
 import FooterMarketButton from './FooterMarketButton';
-import { OZ, WB, YA } from '../../../../../assets/images/Footer';
+import { OZ, WB, YA } from '@/assets/images/Footer';
 import FooterTitle from '../../FooterTitle';
 
 const FooterMarket = () => {

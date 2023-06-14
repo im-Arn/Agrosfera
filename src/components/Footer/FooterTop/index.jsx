@@ -6,7 +6,7 @@ import FooterMarket from './FooterCallBack/FooterMarket';
 import FooterCopyright from './FooterCopyright';
 import Image from 'next/image';
 import Link from 'next/link';
-import { LogoDesc } from '../../../assets/images/Footer';
+import { LogoDesc } from '@/assets/images/Footer';
 
 const FooterTop = () => {
   return (

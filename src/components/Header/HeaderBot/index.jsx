@@ -1,12 +1,13 @@
 'use client';
 import Image from 'next/image';
-import Button from '../../ui/Button';
+import { Button } from '@/components/ui';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import HeaderHamburgerMenu from '../HeaderHamburgerMenu';
 import HeaderBotNavList from '../HeaderBot/HeaderBotNavList';
-import { burger, logoHeader, hBox, hGroup, hContact, hHome, descOpt } from '../../../assets/images/Header';
+import { burger, logoHeader, hBox, hGroup, hContact, hHome, descOpt } from '@/assets/images/Header';
+
 
 const HeaderBot = () => {
 
@@ -69,17 +70,7 @@ const HeaderBot = () => {
       />
       <HeaderBotNavList data={dataNavDesc} />
 
-      <div className='w-[56%] max-w-[174px] md:max-w-[240px] flex'>
-        {/* <Link href={'/'} className='mr-[28px] lg:mr-[0px]'>
-          <Button
-            variant='black'
-            className='w-[124px] md:w-[180px] xl:w-[239px] h-[30px] md:h-[44px]
-        text-white text-[10px] leading-[10px] md:text-[14px] md:leading-[14px] '
-          >
-            Оставить заявку
-          </Button>
-        </Link> */}
-
+      <div className='w-[56%] max-w-[174px] md:max-w-[240px] flex justify-between'>
         <Link href={'/'} className='mr-[8%] lg:mr-[0px]'>
           <Button
             variant='black'

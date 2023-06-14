@@ -25,12 +25,12 @@ const MainAbout = () => {
   ];
 
   return (
-    <section className='w-full mt-[60px] mb-[60px] flex flex-col px-[25px] xl:px-[0px]'>
+    <section className='w-full mt-[88px] flex flex-col px-[25px] xl:px-[0px]'>
       <Title2>О компании </Title2>
-      <article className="mt-[30px] pb-[30px] lg:py-[69px] lg:mt-[56px] border-b-[1px] lg:gap-[10px] lg:border-b-[0px] border-[#c4c4c4]
+      <article className="mt-[33px] pb-[30px] lg:py-[69px] lg:mt-[56px] border-b-[1px] lg:gap-[10px] lg:border-b-[0px] border-[#c4c4c4]
       flex flex-col lg:flex-row lg:justify-between">
         <Image
-          className='w-full h-[219px] sm:w-[588px] sm:h-[359px] mb-[30px] lg:mb-[0px] rounded'
+          className='w-full h-auto sm:w-[588px] sm:h-[359px] mb-[30px] lg:mb-[0px] rounded'
           src={ppl}
           alt='изображение'
         />
