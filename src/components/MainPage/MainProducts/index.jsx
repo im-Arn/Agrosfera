@@ -1,8 +1,9 @@
+'use client';
+import React, { useState } from 'react';
 import Accordion from './Accordion';
 import Link from 'next/link';
 import { Title2 } from '../../ui';
 import { BigGreen } from '../../../assets/images/MainPage';
-// import Image from 'next/image';
 
 const MainProducts = () => {
   const products = [
@@ -32,6 +33,12 @@ const MainProducts = () => {
     },
   ];
 
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
+
   return (
     <section className='w-full mt-[60px] mb-[60px] flex flex-col gap-[28px] px-[25px] xl:px-[0px]'>
       <div className="lg:min-h-[229px] lg:pt-[5px]  flex flex-col lg:flex-row lg:justify-between gap-[30px] ">
@@ -42,11 +49,18 @@ const MainProducts = () => {
           more-or-less normal distribution of letters, as opposed to using
         </p>
       </div>
-      <div className='w-full flex items-stretch'>
+      <div className='w-full flex items-stretch transition-all duration-75 ease-linear'>
         <div className='w-full lg:w-[52%]'>
           <ul className='flex flex-col gap-[1px] bg-[#c4c4c4]'>
             {products.map(({ title, subtitle, href, img }, index) => (
-              <Accordion title={title} subtitle={subtitle} href={href} img={img} key={index} />))}
+              <Accordion
+                title={title}
+                subtitle={subtitle}
+                href={href}
+                img={img}
+                key={index}
+                isOpen={activeIndex === index}
+                onToggle={() => toggleAccordion(index)} />))}
           </ul>
           <div className='w-full h-[83px] lg:h-[83px] flex flex-col justify-center lg:pr-[40px]'>
             <Link href={'/'} className='w-fit pb-[5px] text-[14px] leading-[14px] md:text-[18px] md:leading-[18px] text-[#000000] md:text-[#66B463]
@@ -56,7 +70,7 @@ const MainProducts = () => {
             </Link>
           </div>
         </div>
-        <div className='hidden lg:flex w-[48%] bg-[#000000]'>
+        <div className='hidden lg:flex w-[48%] bg-[#000000] transition-all duration-75 ease-linear'>
           {/* <Image
             className='w-full h-full'
             src={BigGreen}
