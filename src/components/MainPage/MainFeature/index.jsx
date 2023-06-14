@@ -1,8 +1,8 @@
-const MainFeature = ({ children }) => {
+const MainFeature = ({ children, className }) => {
   return (
-    <section className='mt-[60px] lg:mt-[120px] w-full h-[650px] bg-[#F9F9F9] flex flex-col justify-center items-center border-[2px] border-[##898989] rounded-xl'>
-      <p className='text-[36px] leading-[43px] text-bold text-[#C8C8C8]'>{children}</p>
-    </section>
+      <section className={`w-full bg-[#F9F9F9] flex flex-col justify-center items-center border-[2px] border-[##898989] rounded-xl ${className}`}>
+        <p className='text-[36px] leading-[43px] text-bold text-[#C8C8C8]'>{children}</p>
+      </section>
   );
 };
 

@@ -24,7 +24,7 @@ const MainReviews = () => {
   ];
 
   return (
-    <section className='w-full mt-[58px] lg:mt-[120px] px-[25px] flex flex-col gap-[31px]'>
+    <section className='w-full mt-[58px] lg:mt-[161px] flex flex-col gap-[31px]'>
       <h2 className='max-w-[310px] md:max-w-[450px] text-[30px] leading-[30px] md:text-[44px] md:leading-[44px] font-bold text-[#000000]'>
         Отзывы довольных клиентов
       </h2>

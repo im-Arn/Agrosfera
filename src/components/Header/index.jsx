@@ -1,13 +1,15 @@
-// 'use client'
 import HeaderTop from './HeaderTop';
 import HeaderBot from './HeaderBot';
+import { ContentZone } from '@/components/ui';
 
 const Header = () => {
 
   return (
     <header className='w-full'>
       <HeaderTop />
-      <HeaderBot />
+      <ContentZone>
+        <HeaderBot />
+      </ContentZone>
     </header>
   );
 };

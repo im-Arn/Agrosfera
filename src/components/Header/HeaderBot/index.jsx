@@ -56,15 +56,33 @@ const HeaderBot = () => {
       name: 'Оптовые поставки',
       img: descOpt,
       route: '/',
+      list: [
+        {
+          title: 'Купить спанбонд',
+          route: '/',
+        },
+        {
+          title: 'Геотекстиль',
+          route: '/',
+        },
+        {
+          title: 'Геополотно',
+          route: '/',
+        },
+        {
+          title: 'Купить чёрно-белая плёнка',
+          route: '/',
+        },
+      ],
     },
   ];
 
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
   return (
-    <section className='mx-auto max-w-[1300px] h-[66px] md:h-[110px] px-[25px] xl:px-[0px] flex items-center justify-between'>
+    <section className='mx-auto max-w-[1300px] h-[66px] md:h-[110px] flex items-center justify-between'>
       <Image
-        className='w-[40%] max-w-[125px] md:w-[157px] xl:w-[210px]'
+        className='w-[40%] max-w-[125px] xl:w-[17%] xl:max-w-[210px] md:w-[157px] xl:w-[210px]'
         src={logoHeader}
         alt='лого АгроСфера'
       />

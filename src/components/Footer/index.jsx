@@ -4,9 +4,9 @@ import FooterTop from './FooterTop';
 const Footer = () => {
   return (
     <footer className='w-full'>
-      <FooterTop />
-      <FooterBot />
-    </footer>
+        <FooterTop />
+        <FooterBot />
+    </footer >
   );
 };
 

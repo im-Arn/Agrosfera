@@ -1,10 +1,12 @@
 import Link from 'next/link';
-import { Title2 } from '../../ui';
-import { ppl } from '../../../assets/images/MainPage';
+import { Title2 } from '@/components/ui';
+import { ppl } from '@/assets/images/MainPage';
 import Image from 'next/image';
 import AboutItem from './AboutItem';
 
 const MainAbout = () => {
+  // нестандартная вёрстка в макете привела к тому что на деске не используется map и соответственно этот массив
+
   const about = [
     {
       title: 'Собственное производство',
@@ -25,10 +27,10 @@ const MainAbout = () => {
   ];
 
   return (
-    <section className='w-full mt-[88px] flex flex-col px-[25px] xl:px-[0px]'>
+    <section className='w-full mt-[88px] lg:mt-[148px] flex flex-col'>
       <Title2>О компании </Title2>
-      <article className="mt-[33px] pb-[30px] lg:py-[69px] lg:mt-[56px] border-b-[1px] lg:gap-[10px] lg:border-b-[0px] border-[#c4c4c4]
-      flex flex-col lg:flex-row lg:justify-between">
+      <article className="mt-[33px] pb-[30px] lg:py-[69px] lg:mt-[60px] border-b-[1px] lg:gap-[10px] lg:border-b-[0px] border-[#c4c4c4]
+      flex flex-col lg:flex-row lg:justify-between lg:border-t-[1px] border-[#c4c4c4]">
         <Image
           className='w-full h-auto sm:w-[588px] sm:h-[359px] mb-[30px] lg:mb-[0px] rounded'
           src={ppl}
@@ -55,25 +57,25 @@ const MainAbout = () => {
             <AboutItem title={title} subtitle={subtitle} key={index} />))}
         </ul>
         <ul className='hidden w-full xl:flex flex-row gap-[1px] bg-[#c4c4c4]'>
-          <li className='w-[22.3%] pt-[30px] lg:pt-[4px] py-[29px] lg:pb-[10px] bg-[#ffffff] flex justify-start'>
+          <li className='w-[22.3%] pt-[30px] lg:pt-[3px] py-[29px] lg:pb-[31px] bg-[#ffffff] border-b-[1px] border-[#c4c4c4] flex justify-start'>
             <div className='w-full lg:w-[223px] flex flex-col gap-[6px] lg:gap-[22px]'>
               <h4 className='text-[18px] leading-[21px] font-bold'>Собственное производство</h4>
               <p className='text-[14px] leading-[17px] font-normal text-[#5D5E61]'>Благодаря собственному производству мы в кратчайшие сроки реализуем ваш заказ</p>
             </div>
           </li>
-          <li className='w-[358px] pt-[30px] lg:pt-[4px] py-[29px] lg:pb-[10px] bg-[#ffffff] flex justify-center'>
+          <li className='w-[358px] pt-[30px] lg:pt-[3px] py-[29px] lg:pb-[31px] bg-[#ffffff] border-b-[1px] border-[#c4c4c4] flex justify-center'>
             <div className='w-full lg:w-[223px] flex flex-col gap-[6px] lg:gap-[22px]'>
               <h4 className='text-[18px] leading-[21px] font-bold'>Собственное производство</h4>
               <p className='text-[14px] leading-[17px] font-normal text-[#5D5E61]'>Благодаря собственному производству мы в кратчайшие сроки реализуем ваш заказ</p>
             </div>
           </li>
-          <li className='w-[358px] pt-[30px] lg:pt-[4px] py-[29px] lg:pb-[10px] bg-[#ffffff] flex justify-center'>
+          <li className='w-[358px] pt-[30px] lg:pt-[3px] py-[29px] lg:pb-[31px] bg-[#ffffff] border-b-[1px] border-[#c4c4c4] flex justify-center'>
             <div className='w-full lg:w-[223px] flex flex-col gap-[6px] lg:gap-[7px]'>
               <h4 className='text-[18px] leading-[21px] font-bold'>Специальные условия для новых клиентов</h4>
               <p className='text-[14px] leading-[17px] font-normal text-[#5D5E61]'>Благодаря собственному производству мы в кратчайшие сроки реализуем ваш заказ</p>
             </div>
           </li>
-          <li className='w-[290px] pt-[30px] lg:pt-[4px] py-[29px] lg:pb-[10px] bg-[#ffffff] flex justify-end'>
+          <li className='w-[290px] pt-[30px] lg:pt-[3px] py-[29px] lg:pb-[31px] bg-[#ffffff] border-b-[1px] border-[#c4c4c4] flex justify-end'>
             <div className='w-full lg:w-[223px] flex flex-col gap-[6px] lg:gap-[7px]'>
               <h4 className='text-[18px] leading-[21px] font-bold'>Оперативная отгрузка и доставка в любой регион</h4>
               <p className='text-[14px] leading-[17px] font-normal text-[#5D5E61]'>Благодаря собственному производству мы в кратчайшие сроки реализуем ваш заказ</p>
