@@ -40,8 +40,8 @@ const MainProducts = () => {
   };
 
   return (
-    <section className='w-full mt-[60px] mb-[60px] flex flex-col gap-[28px] px-[25px] xl:px-[0px]'>
-      <div className="lg:min-h-[229px] lg:pt-[5px]  flex flex-col lg:flex-row lg:justify-between gap-[30px] ">
+    <section className='w-full mt-[55px] mb-[60px] flex flex-col gap-[26px] px-[25px] xl:px-[0px]'>
+      <div className="lg:min-h-[229px] lg:pt-[5px]  flex flex-col lg:flex-row lg:justify-between gap-[32px] ">
         <Title2>Продукция</Title2>
         <p className='w-full lg:w-[48%] h-min text-[14px] leading-[18px] md:text-[24px] md:leading-[31px] font-normal '>
           It is a long established fact that a reader will be distracted by the readable content
@@ -62,7 +62,7 @@ const MainProducts = () => {
                 isOpen={activeIndex === index}
                 onToggle={() => toggleAccordion(index)} />))}
           </ul>
-          <div className='w-full h-[83px] lg:h-[83px] flex flex-col justify-center lg:pr-[40px]'>
+          <div className='w-full h-[78px] lg:h-[83px] flex flex-col justify-center lg:pr-[40px]'>
             <Link href={'/'} className='w-fit pb-[5px] text-[14px] leading-[14px] md:text-[18px] md:leading-[18px] text-[#000000] md:text-[#66B463]
        border-b-[1px] border-[#898989] md:border-[#66B463]
        md:self-end md:mr-[37px]'>

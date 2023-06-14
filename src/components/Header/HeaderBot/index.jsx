@@ -69,7 +69,7 @@ const HeaderBot = () => {
       />
       <HeaderBotNavList data={dataNavDesc} />
 
-      <div className='w-[56%] max-w-[174px] md:max-w-[240px] flex'>
+      <div className='w-[56%] max-w-[174px] md:max-w-[240px] flex justify-between'>
         {/* <Link href={'/'} className='mr-[28px] lg:mr-[0px]'>
           <Button
             variant='black'

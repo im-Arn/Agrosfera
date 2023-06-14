@@ -22,7 +22,7 @@ const Accordion = ({ title, subtitle, img , isOpen, onToggle}, key) => {
             alt='иконка стрелки'
           />}
       </button>
-      <div className={`max-h-[0px] pt-[10px] lg:mb-[15px] lg:pt-[15px] flex flex-col gap-[10px] md:gap-[20px] overflow-hidden transition-all duration-300 ease-linear 
+      <div className={`max-h-[0px] pt-[9px] lg:mb-[15px] lg:pt-[15px] flex flex-col gap-[10px] md:gap-[20px] overflow-hidden transition-all duration-300 ease-linear 
       text-white ${isOpen ? 'max-h-[400px]' : ''}`}>
         <p className='lg:mb-[10px] text-[14px] leading-[17px] md:text-[16px] md:leading-[21px] font-normal text-[#2E2E2E]'>{subtitle}</p>
         <div className='w-full lg:hidden pb-[13px]'>

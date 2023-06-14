@@ -84,12 +84,12 @@ const MainPriceList = () => {
   };
 
   return (
-    <section className={`max-w-[1300px] h-[779px] md:h-[700px] rounded-md flex justify-center relative 
-    bg-cover px-[25px] xl:px-[0px] mt-[35px] bg-[url('../assets/images/MainPage/bigGreen.png')]`}>
-      <div className='w-[84%] max-w-[340px] md:max-w-[450px] h-[622px] sm:w-[450px] sm:h-[639px] rounded-xl bg-[#FFFFFF] 
-  absolute top-[126px] md:top-[30px] md:right-40 px-[15px] py-[30px] md:px-[39px]'>
+    <section className={`max-w-[1300px] h-[779px] md:h-[700px] md:rounded-md flex justify-center relative 
+    bg-cover px-[25px] xl:px-[0px] mt-[35px] bg-[url('../assets/images/MainPage/bigGreen.png')] bg-center`}>
+      <div className='w-[87.18%] max-w-[340px] md:max-w-[450px]  sm:w-[450px] sm:h-[639px] rounded-xl bg-[#FFFFFF] 
+  absolute top-[126px] md:top-[30px] md:right-40 px-[15px] pt-[28px] pb-[30px] md:px-[39px]'>
         <Title2>Получить прайс-лист</Title2>
-        <form className='mt-[30px] flex flex-col items-center gap-[15px]' onSubmit={handleSubmit}>
+        <form className='mt-[31px] flex flex-col items-center gap-[15px]' onSubmit={handleSubmit}>
           <label className='w-full flex flex-col gap-[10px] text-[16px] leading-[16px] font-medium' htmlFor='person'><p>Название компании</p>
             <input
               type='text'
@@ -156,7 +156,7 @@ const MainPriceList = () => {
             // disabled={true}
             type='submit'
             variant='green'
-            className='w-full max-w-[280px] h-[46px] text-white text-[13px] leading-[13px]'
+            className='w-full max-w-[280px] h-[46px] mt-[15px] text-white text-[13px] leading-[13px]'
           >
             Получить прайс
           </Button>

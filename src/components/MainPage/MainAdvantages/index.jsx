@@ -15,7 +15,7 @@ const MainAdvantages = () => {
   };
 
   return (
-    <section className='w-full px-[25px] lg:px-[0px] pb-[60px] lg:pb-[30px] flex flex-col border-b-[1px] border-[#С4С4С4] bg-[#ffffff]'>
+    <section className='w-full mt-[28px] px-[25px] xl:px-[0px] pb-[60px] lg:pb-[30px] flex flex-col border-b-[1px] border-[#С4С4С4] bg-[#ffffff]'>
       <Title2>Ключевые показатели</Title2>
       <nav className='w-full pt-[33px] lg:pt-[60px] flex flex-row'>
         <button className={`w-full h-[32px] lg:h-[34px] ${isOpen === 1 ? 'border-b-[2px] border-[#66B463]' : ''}
@@ -34,7 +34,7 @@ const MainAdvantages = () => {
       <div className='w-full transition-all duration-300 pt-[29px] lg:pt-[30px] ease-linear'>
         {isOpen === 1 &&
           <article className='w-full flex flex-col lg:flex-row lg:justify-between gap-[30px] md:gap-[20px]'>
-            <ul className='w-full max-w-[444px] flex flex-col lg:self-center gap-[17px] lg:gap-[71px]'>
+            <ul className='w-full max-w-[444px] flex flex-col lg:self-center gap-[15px] lg:gap-[71px]'>
               <li className='w-full flex flex-col gap-[15px]'>
                 <h4 className='text-[18px] leading-[22px] md:text-[24px] md:leading-[29px] text-[#000000] font-bold'>Команда профессионалов</h4>
                 <p className='text-[14px] leading-[18px] text-[#000000] font-normal text-[#2E2E2E]'>
