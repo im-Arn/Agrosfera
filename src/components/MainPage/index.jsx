@@ -8,14 +8,14 @@ import MainOrder from './MainOrder';
 import MainFeature from './MainFeature';
 import MainAdvantages from './MainAdvantages';
 import MainReviews from './MainReviews';
-import { ContentZone } from "@/components/ui";
+import { ContentZone, ScrollButton } from '@/components/ui';
 
 const MainPage = () => {
 
   return (
     <>
       <Header />
-      <main >
+      <main>
         <ContentZone>
           <section className='max-w-[902px] pt-[23px] xl:pt-[55px] flex flex-col md:flex-row md:justify-between md:items-center'>
             <h1 className='text-[60px] leading-[60px] md:text-[105px] md:leading-[105px] lg:text-[120px] lg:leading-[133px] font-bold -tracking-[.005em]'>АгроСфера</h1>
@@ -23,7 +23,7 @@ const MainPage = () => {
           </section>
         </ContentZone>
         <MainPriceList />
-        <ContentZone>
+        <ContentZone className='relative'>
           <MainAchievements />
           <MainProducts />
           <MainAbout />
@@ -32,6 +32,7 @@ const MainPage = () => {
           <MainOrder />
           <MainFeature className='mt-[62px] lg:mt-[163px] h-[502px]'>Контакты</MainFeature>
           <MainReviews />
+          <ScrollButton />
         </ContentZone>
       </main>
       <Footer />
